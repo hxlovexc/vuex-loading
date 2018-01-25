@@ -1,7 +1,7 @@
 {
   "name": "vuex-loading",
   "version": "0.0.1",
-  "description": "基于vuejs 2.0的ui组件，框架",
+  "description": "vuex的自动loading插件, 避免在actions的时候频繁手动显示和隐藏loading",
   "main": "main.js",
   "scripts": {
     "dev": "node build/dev-server.js",
