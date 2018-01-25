@@ -5,12 +5,8 @@
   "main": "main.js",
   "scripts": {
     "dev": "node build/dev-server.js",
-    "style-dev": "gulp dev --gulpfile build/gulp-config.js",
-    "build-style": "gulp --gulpfile build/gulp-config.js && gulp build-mini --gulpfile build/gulp-config.js",
     "build-demo": "node build/build.js",
-    "build-js": "node build/webpack-xui-conf.js && cross-env model=build node build/webpack-xui-conf.js",
-    "build-lib": "node build/webpack-lib.conf.js",
-    "build-xui": "npm run build-js && npm run build-lib && npm run build-style"
+    "build": "node build/webpack-vuex-loading-conf.js && cross-env model=build node build/webpack-vuex-loading-conf.js"
   },
   "repository": {
     "type": "git",

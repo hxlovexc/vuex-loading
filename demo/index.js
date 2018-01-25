@@ -9,6 +9,14 @@ new Vue({
   computed: {
     number () {
       return this.$store.state.number;
+    },
+    loading () {
+      return this.$store.state.$loading;
+    }
+  },
+  methods: {
+    add () {
+      this.$store.dispatch('asyncAdd');
     }
   }
 });

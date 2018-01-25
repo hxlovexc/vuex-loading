@@ -1,11 +1,11 @@
 import Vue from 'vue';
 
-export default () => ({ state, _actions }) => {
+module.exports = () => ({ state, _actions }) => {
   // 添加loading对象
   Vue.set(state, '$loading', {});
   const $loading = state.$loading;
   // 遍历
-  Object.keys(_actions).forEach((key) => {
+  for (let key in _actions) {
     // 设置默认值
     Vue.set($loading, key, false);
     const action = _actions[key][0];
@@ -23,5 +23,5 @@ export default () => ({ state, _actions }) => {
       }
       return value;
     };
-  });
+  }
 };
