@@ -1,8 +1,8 @@
 {
-  "name": "vuex-loading",
+  "name": "vuex-loading-plug",
   "version": "0.0.1",
   "description": "vuex的自动loading插件, 避免在actions的时候频繁手动显示和隐藏loading",
-  "main": "main.js",
+  "main": "./dist/vuex-loading.min.js",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build-demo": "node build/build.js",
@@ -10,13 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hxlovexc/vuex-loading.git"
+    "url": "git+https://github.com/hxlovexc/vuex-loading-plug.git"
   },
   "keywords": [
-    "xui",
     "vue",
-    "vue-components",
-    "components"
+    "vuex",
+    "loading",
+    "vuex-loading",
+    "vuex-loading-plug"
   ],
   "dependencies": {
     "babel-preset-stage-2": "^6.24.1",
@@ -84,7 +85,6 @@
   "author": "小缘",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hxlovexc/xui/issues"
-  },
-  "homepage": "https://github.com/hxlovexc/xui#readme"
+    "url": "https://github.com/hxlovexc/vuex-loading-plug/issues"
+  }
 }
