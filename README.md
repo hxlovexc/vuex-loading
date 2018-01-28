@@ -26,7 +26,6 @@ $ yarn add vuex-loading-plug
     <h1>{{number}}</h1>
     <div class="buttons">
       <button @click="add">添加</button>
-      <button>减少</button>
     </div>
   </div>
 </body>
