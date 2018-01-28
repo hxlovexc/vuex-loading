@@ -7,7 +7,7 @@ Vue.use(vuex);
 function ajax () {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log('time');
+      /* eslint-disable */
       resolve();
     }, 1000);
   });
@@ -30,5 +30,5 @@ export default new vuex.Store({
       commit('add');
     }
   },
-  plugins: [loading()]
+  plugins: [loading]
 });

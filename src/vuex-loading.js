@@ -1,13 +1,12 @@
 import Vue from 'vue';
 
-module.exports = () => ({ state, _actions }) => {
+module.exports = ({ state, _actions }) => {
   // 添加loading对象
-  Vue.set(state, '$loading', {});
-  const $loading = state.$loading;
+  const $loading = {};
   // 遍历
   for (let key in _actions) {
     // 设置默认值
-    Vue.set($loading, key, false);
+    $loading[key] = false;
     const action = _actions[key][0];
     // 重写 进行拦截
     _actions[key][0] = async (data) => {
@@ -24,4 +23,5 @@ module.exports = () => ({ state, _actions }) => {
       return value;
     };
   }
+  Vue.set(state, '$loading', $loading);
 };
