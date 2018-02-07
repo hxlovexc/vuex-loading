@@ -1,6 +1,6 @@
 {
   "name": "vuex-loading-plug",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "vuex的自动loading插件, 避免在actions的时候频繁手动显示和隐藏loading",
   "main": "./dist/vuex-loading.min.js",
   "scripts": {
