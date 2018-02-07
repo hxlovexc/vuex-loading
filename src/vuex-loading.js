@@ -17,7 +17,6 @@ module.exports = ({ state, _actions }) => {
         value = await action(data);
         $loading[key] = false;
       } catch (error) {
-        console.log(123);
         $loading[key] = false;
         throw error;
       }

@@ -782,21 +782,20 @@ module.exports = function (_ref) {
                 value = _context.sent;
 
                 $loading[key] = false;
-                _context.next = 14;
+                _context.next = 13;
                 break;
 
               case 9:
                 _context.prev = 9;
                 _context.t0 = _context['catch'](2);
 
-                console.log(123);
                 $loading[key] = false;
                 throw _context.t0;
 
-              case 14:
+              case 13:
                 return _context.abrupt('return', value);
 
-              case 15:
+              case 14:
               case 'end':
                 return _context.stop();
             }
